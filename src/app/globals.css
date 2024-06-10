@@ -1,7 +1,31 @@
+/* 
+  Colors used throughout the app.
+  Note: Also add to constants.js when adding new colors.
+*/
+:root {
+  /* 
+    Colors used throughout the app.
+    Note: Also add to constants.js when adding new colors.
+  */
+  --color-primary: #4285f4;
+  --color-secondary: #ffffff;
+  --color-gray: #d2d4da;
+  --color-error: #f31700;
+
+  /*
+    Device breakpoints.
+    Note: Also add to globals.css when adding new breakpoints.
+  */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 868px;
+  --breakpoint-lg: 1042px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 18px;
 }
 
 html,
