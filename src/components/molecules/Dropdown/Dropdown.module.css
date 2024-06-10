@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-secondary);
+}
+
+.closed > div {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.open > div {
+  /* display: block; */
+  /* height: 100px; */
+  height: 32px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    /* opacity: 0; */
+  }
+  to {
+    transform: translateY(0);
+    /* opacity: 1; */
+  }
+}
