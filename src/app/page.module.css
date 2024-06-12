@@ -1,7 +1,112 @@
-.section1 {}
+.section1 {
+  /* Frame 2765 */
+  position: absolute;
+  width: 1440px;
+  height: 644.92px;
+  left: 0px;
+  top: 100px;
+  background: #ffffff;
+}
 
-.section2 {}
+/* Random comment for git */
+.section2 {
+  position: absolute;
+  width: 1440px;
+  height: 644.92px;
+  left: 0px;
+  top: 100px;
+  background: #ffffff;
+}
 
-.section3 {}
+.body {
+  /* Landing Page /Desktop */
+  position: relative;
+  width: 1440px;
+  height: 2981px;
+  background: #ffffff;
+}
 
-.section4 {}
+/* How IT Works Section */
+
+.section3 {
+  position: absolute;
+  width: 100%;
+  height: 489px;
+  left: 0;
+  top: calc(50% - 489px / 2 - 12px);
+  background: rgba(11, 126, 214, 0.61);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subheading {
+  width: 384px;
+  height: 48px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #05365b;
+  margin-bottom: 20px;
+  align-self: flex-start; /* This aligns the subheading to the left */
+  margin-left: 114px; /* Same left margin as the .steps container */
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 114px; /* Adjust padding as needed */
+}
+
+.step {
+  position: relative;
+  width: 447px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stepHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.stepNumber {
+  width: 60px;
+  height: 60px;
+  background: #d54300;
+  border-radius: 11.6766px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  color: #fff;
+}
+
+.stepTitle {
+  margin-left: 20px; /* Adjust as needed */
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.stepImage {
+  margin-top: 20px; /* Adjust as needed */
+  width: auto; /* Adjust as needed */
+  max-width: 100%; /* Makes the image take the full width of the step container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.section4 {
+}
