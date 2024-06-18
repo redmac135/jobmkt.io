@@ -18,7 +18,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 114px;
+  padding: 0 80px; /* Reduced padding */
   box-sizing: border-box;
 }
 
@@ -34,14 +34,14 @@
   color: #05365b;
   margin-bottom: 20px;
   align-self: flex-start;
-  margin-left: 114px;
+  margin-left: 80px; /* Align with new padding */
 }
 
 .steps {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 114px;
+  padding: 0 80px; /* Reduced padding */
   box-sizing: border-box;
 }
 
@@ -50,6 +50,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px; /* Ensure consistent spacing between steps */
 }
 
 .stepHeader {
@@ -90,12 +91,9 @@
 }
 
 @media (max-width: 768px) {
-  /* Mobile view */
+  /* Tablet view */
   .section3 {
-    min-height: auto;
-    height: auto;
-    /* top: 1277px; */ /* Can include this when putting actual sections together. this is where it should be located on site */
-    padding: 0 20px;
+    padding: 0 40px; /* Reduce padding */
   }
 
   .steps {
@@ -105,7 +103,7 @@
 
   .step {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Ensure consistent spacing between steps */
   }
 
   .subheading {
@@ -113,6 +111,47 @@
     text-align: center;
     align-self: center;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Mobile view */
+  .section3 {
+    min-height: 800px; /* Set a constant height */
+    height: 800px; /* Ensure height is constant */
+    /* top: 1277px; */ /* Can include this when putting actual sections together. this is where it should be located on site */
+    padding: 0 20px; /* Further reduce padding */
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    width: 100%;
+    margin-bottom: 20px; /* Ensure consistent spacing between steps */
+  }
+
+  .subheading {
+    margin-left: 0;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  .stepHeader {
+    width: 100%;
+    text-align: center; /* Center align text in step headers */
+  }
+
+  .stepTitle {
+    margin-left: 10px; /* Reduce margin for smaller screens */
+  }
+
+  .stepImage {
+    width: 100%;
+    max-width: none; /* Remove max-width restriction */
   }
 }
 
