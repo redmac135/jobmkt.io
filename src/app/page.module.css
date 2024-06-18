@@ -1,48 +1,30 @@
 .section1 {
-  /* Frame 2765 */
-  position: absolute;
-  width: 1440px;
-  height: 644.92px;
-  left: 0px;
-  top: 100px;
-  background: #ffffff;
 }
 
 /* Random comment for git */
 .section2 {
-  position: absolute;
-  width: 1440px;
-  height: 644.92px;
-  left: 0px;
-  top: 100px;
-  background: #ffffff;
-}
-
-.body {
-  /* Landing Page /Desktop */
-  position: relative;
-  width: 1440px;
-  height: 2981px;
-  background: #ffffff;
 }
 
 /* How IT Works Section */
-
 .section3 {
   position: absolute;
   width: 100%;
-  height: 489px;
-  left: 0;
-  top: calc(50% - 489px / 2 - 12px);
+  min-height: 480px; /* Ensure a minimum height to prevent content overflow */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1234px;
   background: rgba(11, 126, 214, 0.61);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 114px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 .subheading {
   width: 384px;
+  max-width: 100%; /* Ensure subheading doesn't overflow */
   height: 48px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -51,6 +33,7 @@
   line-height: 48px;
   color: #05365b;
   margin-bottom: 20px;
+  text-align: center; /* Center align text */
   align-self: flex-start; /* This aligns the subheading to the left */
   margin-left: 114px; /* Same left margin as the .steps container */
 }
@@ -59,11 +42,9 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 114px; /* Adjust padding as needed */
 }
 
 .step {
-  position: relative;
   width: 447px;
   display: flex;
   flex-direction: column;
@@ -75,7 +56,6 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  position: relative;
 }
 
 .stepNumber {
@@ -108,5 +88,28 @@
   height: auto; /* Maintain aspect ratio */
 }
 
-.section4 {
+@media (max-width: 768px) {
+  /* Mobile view */
+  .section3 {
+    min-height: auto; /* Allow section to shrink based on content */
+    height: auto; /* Allow height to adjust based on content */
+    top: 1277px;
+    padding: 0 20px; /* Adjust padding as needed */
+  }
+
+  .steps {
+    flex-direction: column; /* Stack steps vertically on mobile */
+    align-items: center;
+  }
+
+  .step {
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 20px; /* Add some space between steps */
+  }
+
+  .subheading {
+    margin-left: 0; /* Center the subheading */
+    text-align: center; /* Center align text */
+    align-self: center; /* Center align element */
+  }
 }
