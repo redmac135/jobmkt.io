@@ -18,7 +18,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 80px; /* Reduced padding */
+  padding: 0 80px;
   box-sizing: border-box;
 }
 
@@ -34,14 +34,14 @@
   color: #05365b;
   margin-bottom: 20px;
   align-self: flex-start;
-  margin-left: 80px; /* Align with new padding */
+  margin-left: 80px;
 }
 
 .steps {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 80px; /* Reduced padding */
+  padding: 0 80px;
   box-sizing: border-box;
 }
 
@@ -50,7 +50,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px; /* Ensure consistent spacing between steps */
+  margin-bottom: 20px;
 }
 
 .stepHeader {
@@ -84,16 +84,16 @@
 }
 
 .stepImage {
-  margin-top: 20px; /* Adjust as needed */
-  width: auto; /* Adjust as needed */
+  margin-top: 20px;
+  width: auto;
   max-width: 100%; /* Makes the image take the full width of the step container */
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
 }
 
 @media (max-width: 768px) {
   /* Tablet view */
   .section3 {
-    padding: 0 40px; /* Reduce padding */
+    padding: 0 40px;
   }
 
   .steps {
@@ -103,7 +103,7 @@
 
   .step {
     width: 100%;
-    margin-bottom: 20px; /* Ensure consistent spacing between steps */
+    margin-bottom: 20px;
   }
 
   .subheading {
@@ -117,10 +117,10 @@
 @media (max-width: 375px) {
   /* Mobile view */
   .section3 {
-    min-height: 800px; /* Set a constant height */
-    height: 800px; /* Ensure height is constant */
+    min-height: 800px;
+    height: 800px;
     /* top: 1277px; */ /* Can include this when putting actual sections together. this is where it should be located on site */
-    padding: 0 20px; /* Further reduce padding */
+    padding: 0 20px;
   }
 
   .steps {
@@ -130,7 +130,7 @@
 
   .step {
     width: 100%;
-    margin-bottom: 20px; /* Ensure consistent spacing between steps */
+    margin-bottom: 20px;
   }
 
   .subheading {
