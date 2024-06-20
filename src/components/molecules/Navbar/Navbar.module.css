@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: #ffffff;
+
+  /* CSS custom properties do not work in media declarations,
+     so we will just hardcode --breakpoint-md. */
+  @media only screen and (max-width: 868px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.leftContent {
+  display: flex;
+  gap: 2rem;
+}
+
+.links {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 1.5rem;
+  color: #555555;
+  /* width: 50%; */
+}
+
+.rightContent {
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.hamburgerDropdown {
+  width: 100%;
+}
