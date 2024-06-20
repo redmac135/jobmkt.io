@@ -181,9 +181,157 @@
         left: 45px;
         margin-right: 1.5rem;
     }
-
 }
 
-.section3 {}
+/* How IT Works Section */
+.section3 {
+  position: absolute;
+  width: 100%;
+  min-height: 480px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* top: 1234px; */ /* Can include this when putting actual sections together. this is where it should be located on site */
+  background: rgba(11, 126, 214, 0.61);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
 
-.section4 {}
+.subheading {
+  width: 384px;
+  max-width: 100%;
+  height: 48px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #05365b;
+  margin-bottom: 20px;
+  align-self: flex-start;
+  margin-left: 80px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.step {
+  width: 447px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stepHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.stepNumber {
+  width: 60px;
+  height: 60px;
+  background: #d54300;
+  border-radius: 11.6766px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  color: #fff;
+}
+
+.stepTitle {
+  margin-left: 20px; /* Adjust as needed */
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.stepImage {
+  margin-top: 20px;
+  width: auto;
+  max-width: 100%; /* Makes the image take the full width of the step container */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  /* Tablet view */
+  .section3 {
+    padding: 0 40px;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .subheading {
+    margin-left: 0;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Mobile view */
+  .section3 {
+    min-height: 800px;
+    height: 800px;
+    /* top: 1277px; */ /* Can include this when putting actual sections together. this is where it should be located on site */
+    padding: 0 20px;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .subheading {
+    margin-left: 0;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  .stepHeader {
+    width: 100%;
+    text-align: center; /* Center align text in step headers */
+  }
+
+  .stepTitle {
+    margin-left: 10px; /* Reduce margin for smaller screens */
+  }
+
+  .stepImage {
+    width: 100%;
+    max-width: none; /* Remove max-width restriction */
+  }
+}
+
+.section4 {
+}
