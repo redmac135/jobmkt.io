@@ -352,7 +352,7 @@
 .section4 {
 
   width: 100%;
-  min-height: 480px;
+  margin-top: 75px;
   left: 50%;
 
   display: flex;
@@ -417,6 +417,7 @@
   .section4 {
     flex-direction: column;
     padding: 0px 20px;
+    margin-top: 16px;
   }
 
   .subheading {
