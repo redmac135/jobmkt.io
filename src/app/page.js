@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import Navbar from "@/components/molecules/Navbar/Navbar";
+import Button from "@/components/atoms/Button";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <section className={styles.section1}></section>
       <section className={styles.section2}>
         <div className={styles.summary}>
-        <h2 className={styles.heading}>What we do</h2>
+          <h2 className={styles.heading}>What we do</h2>
           <div className={styles.description}>
             <p>Urban Tech Hero is all about creating a community of
               Tech Heroes to transform the underserved community.
@@ -91,10 +92,47 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* display trick to get ordering right on mobile/table+*/}
       <section className={styles.section4}>
-        <h2 className={styles.heading}>How It Works</h2>
+        <div className={styles.mobile_order}>
+          <div className={styles.subheader}>
+            <h2 className={styles.subheading}>Let’s find the job of your dreams</h2>
+          </div>
+          <div className={styles.prompt_image}>
+            <img src="/lets_find.png" />
+          </div>
 
+          <div className={styles.prompt_description}>
+            <p>Discover exciting opportunities tailored to your skills and certification. Browse through a curated list of jobs that match your expertise, and take the next step in your career.</p>
+          </div>
+
+          <div className={styles.prompt_button}>
+            <Button>Find Work</Button>
+          </div>
+        </div>
+
+        <div className={styles.desktop_order}>
+
+          <div className={styles.prompt_left}>
+            <div className={styles.subheader}>
+              <h2 className={styles.subheading}>Let’s find the job of your dreams</h2>
+            </div>
+
+            <div className={styles.prompt_description}>
+              <p>Discover exciting opportunities tailored to your skills and certification. Browse through a curated list of jobs that match your expertise, and take the next step in your career.</p>
+            </div>
+
+            <div className={styles.prompt_button}>
+              <Button>Find Work</Button>
+            </div>
+          </div>
+
+
+          <div className={styles.prompt_image}>
+            <img src="/lets_find.png" />
+          </div>
+        </div>
       </section>
-    </main>
+    </main >
   );
 }

@@ -12,7 +12,7 @@
     font-family: 'Open Sans', sans-serif;
     height: 489px;
     top: 745px;
-    padding: 3rem 7.5rem;
+    padding: 0 7.5rem;
     gap: 1.5rem;
 }
 
@@ -210,9 +210,7 @@
 }
 
 .subheading {
-  width: 384px;
   max-width: 100%;
-  height: 48px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -321,7 +319,6 @@
   /* Mobile view */
   .section3 {
     min-height: 800px;
-    height: 800px;
     /* top: 1277px; */ /* Can include this when putting actual sections together. this is where it should be located on site */
     padding: 0 20px;
   }
@@ -350,3 +347,99 @@
     max-width: none; /* Remove max-width restriction */
   }
 }
+
+/* Let’s find the job of your dreams */
+.section4 {
+
+  width: 100%;
+  min-height: 480px;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 80px;
+  box-sizing: border-box;
+}
+
+
+.prompt_image {
+  width: 588px;
+  max-width: 588px;
+}
+
+.prompt_image img{
+  border-radius: 10px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.prompt_description {
+  color: #555555;
+  font-size: medium;
+  line-height: 1.4;
+}
+
+.prompt_button {
+  margin-top: 16px;
+}
+
+.prompt_left {
+  width: 60%;
+  max-width: 588px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile_order {
+  display: none;
+}
+
+.desktop_order {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 24px;
+
+}
+
+@media (max-width: 1100px) {
+  .subheading {
+    font-size: 28px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  /* Mobile view */
+  .section4 {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+
+  .subheading {
+    font-size: 28px;
+  }
+
+  .subheading {
+    width: 100%;
+    max-width: auto;
+  }
+
+
+  .mobile_order {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .desktop_order {
+    display: none;
+  }
+
+
+}
+
