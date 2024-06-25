@@ -9,7 +9,7 @@ export default function Home() {
       <section className={styles.section1}></section>
       <section className={styles.section2}>
         <div className={styles.summary}>
-          <h2 className={styles.heading}>What we do</h2>
+        <h2 className={styles.heading}>What we do</h2>
           <div className={styles.description}>
             <p>Urban Tech Hero is all about creating a community of
               Tech Heroes to transform the underserved community.
@@ -59,7 +59,9 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.section3}>
-        <h2 className={styles.subheading}>How It Works</h2>
+        <div className={styles.subheader}>
+          <h2 className={styles.subheading}>How It Works</h2>
+        </div>
         <div className={styles.steps}>
           <div className={styles.step}>
             <div className={styles.stepHeader}>
@@ -89,7 +91,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.section4}></section>
+      <section className={styles.section4}>
+        <h2 className={styles.heading}>How It Works</h2>
+
+      </section>
     </main>
   );
 }
