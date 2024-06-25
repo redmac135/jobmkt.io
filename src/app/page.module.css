@@ -352,7 +352,7 @@
 .section4 {
 
   width: 100%;
-  min-height: 480px;
+  margin-top: 75px;
   left: 50%;
 
   display: flex;

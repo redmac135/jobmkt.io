@@ -133,6 +133,49 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className={styles.section4}>
+        <div className={styles.mobile_order}>
+          <div className={styles.subheader}>
+            <h2 className={styles.subheading}>Let’s find the job of your dreams</h2>
+          </div>
+          <div className={styles.prompt_image}>
+            <img src="/hire_with_us.png" />
+          </div>
+
+          <div className={styles.prompt_description}>
+            <p>Explore a pool of certified technicians ready to contribute to your company’s success. Post your job openings and discover the perfect match.</p>
+          </div>
+
+          <div className={styles.prompt_button}>
+            <Button>Find Talent</Button>
+          </div>
+        </div>
+
+        <div className={styles.desktop_order}>
+
+        <div className={styles.prompt_image}>
+            <img src="/hire_with_us.png" />
+          </div>
+
+          <div className={styles.prompt_left}>
+            <div className={styles.subheader}>
+              <h2 className={styles.subheading}>Hire with us</h2>
+            </div>
+
+            <div className={styles.prompt_description}>
+              <p>Explore a pool of certified technicians ready to contribute to your company’s success. Post your job openings and discover the perfect match.</p>
+            </div>
+
+            <div className={styles.prompt_button}>
+              <Button>Find Talent</Button>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
     </main >
   );
 }
