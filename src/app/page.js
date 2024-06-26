@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import Image from "next/image";
 import Navbar from "@/components/molecules/Navbar/Navbar";
 
@@ -6,7 +6,18 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <section className={styles.section1}></section>
+      <section className={styles.section1}>
+        <div className={styles.summary}>
+          <h2 className={styles.heading}>What we do</h2>
+          <div className={`${styles.description} ${styles.summary}`}>
+            <p>Urban Tech Hero is all about creating a community of
+              Tech Heroes to transform the underserved community.
+              To do this, we recognize that connecting
+              students–ours as well as those of other nonprofits–to
+              jobs in the community is the key to success.</p>
+          </div>
+        </div>
+      </section>
       <section className={styles.section2}>
         <div className={styles.summary}>
           <h2 className={styles.heading}>What we do</h2>
